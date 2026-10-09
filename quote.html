@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Order | Panda Supply Montréal</title>
+<meta name="description" content="Build your list and send a quote request to Panda Supply Montréal. No email app needed.">
+<meta name="theme-color" content="#0E0E0F">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:title" content="Order | Panda Supply Montréal">
+<meta property="og:description" content="Build your list and send a quote request to Panda Supply Montréal. No email app needed.">
+<meta property="og:image" content="logo/panda-supply-logo-on-ink.png">
+<link rel="preload" href="fonts/libre-franklin-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/libre-franklin-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<div class="bar"><span data-i18n="ribbon">Exclusive Canadian distributor of Utilnova, Spain</span></div>
+
+<header class="head" id="top">
+  <button class="menubtn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+  <nav class="head__nav" aria-label="Main">
+    <a href="catalogue.html" data-i18n="nav_catalogue">Catalogue</a>
+    <a href="utilnova.html">Utilnova</a>
+    <a href="adhesive.html" data-i18n="nav_adhesive">Adhesive weights</a>
+    <a aria-current="page" href="quote.html" data-i18n="nav_order">Order</a>
+  </nav>
+  <a class="head__logo" href="index.html" aria-label="Panda Supply Montréal"><img src="logo/panda-supply-logo-ink.svg" alt="Panda Supply Montréal" height="34"></a>
+  <div class="head__actions">
+    <div class="lang" id="lang">
+      <button class="lang__btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false" aria-label="Language / Langue"><span id="langCur">EN</span><svg width="9" height="9" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="m1 3 4 4 4-4"/></svg></button>
+      <ul class="lang__menu" id="langMenu" role="listbox" hidden>
+        <li role="option" data-lang="en" tabindex="0"><b>EN</b><span>English</span><small>Canada</small></li>
+        <li role="option" data-lang="fr" tabindex="0"><b>FR</b><span>Français</span><small>Québec</small></li>
+      </ul>
+    </div>
+    <a class="listbtn" href="quote.html" id="listBtn"><span data-i18n="my_list">My list</span><b id="listCount">0</b></a>
+  </div>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Mobile">
+    <a href="catalogue.html" data-i18n="nav_catalogue">Catalogue</a>
+    <a href="utilnova.html">Utilnova</a>
+    <a href="adhesive.html" data-i18n="nav_adhesive">Adhesive weights</a>
+    <a aria-current="page" href="quote.html" data-i18n="nav_order">Order</a>
+    <a aria-current="page" href="quote.html" data-i18n="cta_quote">Request a quote</a>
+  </nav>
+  <div class="menu__foot">
+    <a href="tel:+14389271805">438 927-1805</a>
+    <a href="mailto:sales.pandasupplyinc@gmail.com">sales.pandasupplyinc@gmail.com</a>
+  </div>
+</div>
+
+<main id="main">
+  <section class="pagehead"><div><p class="eyebrow" data-i18n="eb_order"></p><h1 data-i18n="how_h2"></h1></div><p class="sub" data-i18n="order_sub"></p></section>
+  <!-- HOW -->
+  <section class="how how--p" id="how">
+    <ol class="steps">
+      <li><span class="num">01</span><h3 data-i18n="how1_t">Build your list</h3><p data-i18n="how1_p">Search or filter, then add products. Quantities only, we confirm the rest.</p></li>
+      <li><span class="num">02</span><h3 data-i18n="how2_t">Send your request</h3><p data-i18n="how2_p">Tell us who you are and how to reach you. No email app needed.</p></li>
+      <li><span class="num">03</span><h3 data-i18n="how3_t">We confirm and quote</h3><p data-i18n="how3_p">You get pricing, pack sizes, compatibility and availability, straight from the people who stock it.</p></li>
+    </ol>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="quote" id="quote">
+    <div class="quote__inner">
+      <div class="quote__side">
+        <p class="eyebrow eyebrow--light" data-i18n="quote_kicker">Let's talk about your workshop</p>
+        <h2 data-i18n-html="quote_h2">Your next<br>well&#8209;equipped<br><em>workshop.</em></h2>
+        <div class="mylist" id="myList" aria-live="polite">
+          <div class="mylist__head"><h3 data-i18n="list_title">Your list</h3><button class="linkbtn linkbtn--light" id="clearList" hidden data-i18n="clear">Clear</button></div>
+          <p class="mylist__empty" id="listEmpty" data-i18n="list_empty">Nothing here yet. Add products from the catalogue, or just send us a message.</p>
+          <ul id="listItems"></ul>
+        </div>
+        <ul class="direct">
+          <li><span data-i18n="direct_phone">Call</span><a href="tel:+14389271805">438 927-1805</a></li>
+          <li><span data-i18n="direct_email">Email</span><a href="mailto:sales.pandasupplyinc@gmail.com">sales.pandasupplyinc@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="quote__form">
+        <form name="quote" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field" id="quoteForm" novalidate>
+          <input type="hidden" name="form-name" value="quote">
+          <p class="hp"><label>Don't fill this out <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <input type="hidden" name="language" id="fLang" value="en">
+          <textarea name="items" id="fItems" hidden></textarea>
+          <h3 data-i18n="form_title">Request your quote</h3>
+          <div class="row">
+            <label class="field"><span data-i18n="f_shop">Shop or company</span><input name="company" autocomplete="organization" required></label>
+            <label class="field"><span data-i18n="f_name">Your name</span><input name="name" autocomplete="name" required></label>
+          </div>
+          <div class="row">
+            <label class="field"><span data-i18n="f_email">Email</span><input name="email" type="email" autocomplete="email" inputmode="email" required></label>
+            <label class="field"><span><span data-i18n="f_phone">Phone</span> <small data-i18n="optional">(optional)</small></span><input name="phone" type="tel" autocomplete="tel" inputmode="tel"></label>
+          </div>
+          <div class="row">
+            <label class="field"><span><span data-i18n="f_city">City</span> <small data-i18n="optional">(optional)</small></span><input name="city" autocomplete="address-level2"></label>
+            <fieldset class="field field--radio">
+              <legend data-i18n="f_reply">Reply by</legend>
+              <label><input type="radio" name="reply_by" value="email" checked><span data-i18n="f_reply_email">Email</span></label>
+              <label><input type="radio" name="reply_by" value="phone"><span data-i18n="f_reply_phone">Phone</span></label>
+            </fieldset>
+          </div>
+          <label class="field"><span><span data-i18n="f_msg">Anything we should know?</span> <small data-i18n="optional">(optional)</small></span>
+            <textarea name="message" rows="3" data-i18n-ph="f_msg_ph" placeholder="Machine make and model, pack sizes, timing..."></textarea></label>
+          <button class="btn btn--light btn--block" type="submit" id="send"><span data-i18n="send">Send my request</span></button>
+          <p class="fine fine--light" data-i18n="quote_fine">Pricing, pack sizes, compatibility and availability are confirmed when ordering.</p>
+          <p class="err" id="formErr" role="alert" hidden></p>
+        </form>
+        <div class="thanks" id="thanks" hidden tabindex="-1">
+          <svg class="thanks__mark" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="32" cy="32" r="30"/><path d="m19 33 9 9 17-19" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3 data-i18n="thanks_h">Got it. Thank you!</h3>
+          <p id="thanksP"></p>
+          <button class="tlink tlink--light" id="again"><span data-i18n="thanks_again">Send another request</span> <i>→</i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot__top">
+    <img src="logo/panda-supply-stacked-bone.svg" alt="Panda Supply Montréal" width="220">
+    <div class="foot__cols">
+      <div><h4 data-i18n="foot_contact">Contact</h4><a href="tel:+14389271805">438 927-1805</a><a href="mailto:sales.pandasupplyinc@gmail.com">sales.pandasupplyinc@gmail.com</a></div>
+      <div><h4 data-i18n="foot_explore">Explore</h4><a href="catalogue.html" data-i18n="nav_catalogue">Catalogue</a><a href="utilnova.html">Utilnova</a><a href="adhesive.html" data-i18n="nav_adhesive">Adhesive weights</a><a href="quote.html" data-i18n="nav_order">Order</a><a href="catalogue.pdf" target="_blank" rel="noopener" data-i18n="foot_dl">Download catalogue</a></div>
+    </div>
+  </div>
+  <div class="foot__bot"><span data-i18n="foot_dist">Exclusive Canadian distributor of Utilnova · Spain</span><span>© Panda Supply Inc.</span></div>
+</footer>
+
+<a class="fab" id="fab" href="quote.html" hidden><span><b id="fabCount">0</b> <span data-i18n="fab_items">in your list</span></span><strong data-i18n="fab_cta">Request a quote</strong></a>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

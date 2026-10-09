@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Catalogue | Panda Supply Montréal</title>
+<meta name="description" content="Browse 49 products for tire and wheel service: balancing, TPMS and air, tire mounting, repair, tools and supplies.">
+<meta name="theme-color" content="#0E0E0F">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:title" content="Catalogue | Panda Supply Montréal">
+<meta property="og:description" content="Browse 49 products for tire and wheel service: balancing, TPMS and air, tire mounting, repair, tools and supplies.">
+<meta property="og:image" content="logo/panda-supply-logo-on-ink.png">
+<link rel="preload" href="fonts/libre-franklin-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/libre-franklin-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<div class="bar"><span data-i18n="ribbon">Exclusive Canadian distributor of Utilnova, Spain</span></div>
+
+<header class="head" id="top">
+  <button class="menubtn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+  <nav class="head__nav" aria-label="Main">
+    <a aria-current="page" href="catalogue.html" data-i18n="nav_catalogue">Catalogue</a>
+    <a href="utilnova.html">Utilnova</a>
+    <a href="adhesive.html" data-i18n="nav_adhesive">Adhesive weights</a>
+    <a href="quote.html" data-i18n="nav_order">Order</a>
+  </nav>
+  <a class="head__logo" href="index.html" aria-label="Panda Supply Montréal"><img src="logo/panda-supply-logo-ink.svg" alt="Panda Supply Montréal" height="34"></a>
+  <div class="head__actions">
+    <div class="lang" id="lang">
+      <button class="lang__btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false" aria-label="Language / Langue"><span id="langCur">EN</span><svg width="9" height="9" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="m1 3 4 4 4-4"/></svg></button>
+      <ul class="lang__menu" id="langMenu" role="listbox" hidden>
+        <li role="option" data-lang="en" tabindex="0"><b>EN</b><span>English</span><small>Canada</small></li>
+        <li role="option" data-lang="fr" tabindex="0"><b>FR</b><span>Français</span><small>Québec</small></li>
+      </ul>
+    </div>
+    <a class="listbtn" href="quote.html" id="listBtn"><span data-i18n="my_list">My list</span><b id="listCount">0</b></a>
+  </div>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Mobile">
+    <a aria-current="page" href="catalogue.html" data-i18n="nav_catalogue">Catalogue</a>
+    <a href="utilnova.html">Utilnova</a>
+    <a href="adhesive.html" data-i18n="nav_adhesive">Adhesive weights</a>
+    <a href="quote.html" data-i18n="nav_order">Order</a>
+    <a href="quote.html" data-i18n="cta_quote">Request a quote</a>
+  </nav>
+  <div class="menu__foot">
+    <a href="tel:+14389271805">438 927-1805</a>
+    <a href="mailto:sales.pandasupplyinc@gmail.com">sales.pandasupplyinc@gmail.com</a>
+  </div>
+</div>
+
+<main id="main">
+  <section class="pagehead"><div><p class="eyebrow" data-i18n="eb_catalogue"></p><h1 data-i18n="cat_h2"></h1></div><p class="sub" data-i18n="cat_sub"></p></section>
+  <!-- CATALOGUE -->
+  <section class="cat cat--page" id="catalogue">
+    <div class="cat__meta"><span id="count">49 products</span><button class="linkbtn" id="reset" hidden data-i18n="show_all">Show all</button></div>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden data-i18n="empty">Nothing matches that search. Try fewer words, or send us a message and we will find it.</p>
+  </section>
+
+  <section class="band"><div class="band__inner"><h2 data-i18n="band_h">Ready when you are.</h2><div class="hero__cta"><a class="btn" href="quote.html" data-i18n="band_cta">Request a quote</a><a class="tlink" href="catalogue.html"><span data-i18n="explore_cat">Browse the catalogue</span> <i>→</i></a></div></div></section>
+</main>
+
+<footer class="foot">
+  <div class="foot__top">
+    <img src="logo/panda-supply-stacked-bone.svg" alt="Panda Supply Montréal" width="220">
+    <div class="foot__cols">
+      <div><h4 data-i18n="foot_contact">Contact</h4><a href="tel:+14389271805">438 927-1805</a><a href="mailto:sales.pandasupplyinc@gmail.com">sales.pandasupplyinc@gmail.com</a></div>
+      <div><h4 data-i18n="foot_explore">Explore</h4><a href="catalogue.html" data-i18n="nav_catalogue">Catalogue</a><a href="utilnova.html">Utilnova</a><a href="adhesive.html" data-i18n="nav_adhesive">Adhesive weights</a><a href="quote.html" data-i18n="nav_order">Order</a><a href="catalogue.pdf" target="_blank" rel="noopener" data-i18n="foot_dl">Download catalogue</a></div>
+    </div>
+  </div>
+  <div class="foot__bot"><span data-i18n="foot_dist">Exclusive Canadian distributor of Utilnova · Spain</span><span>© Panda Supply Inc.</span></div>
+</footer>
+
+<a class="fab" id="fab" href="quote.html" hidden><span><b id="fabCount">0</b> <span data-i18n="fab_items">in your list</span></span><strong data-i18n="fab_cta">Request a quote</strong></a>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<dialog id="dlg" class="dlg" aria-labelledby="dName">
+  <button class="dlg__x" id="dlgX" aria-label="Close">×</button>
+  <div class="dlg__img"><img id="dImg" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
+  <div class="dlg__body">
+    <p class="dlg__tags"><span id="dBrand"></span><span id="dCat"></span></p>
+    <h3 id="dName"></h3>
+    <p id="dDesc" class="dlg__desc"></p>
+    <p class="fine" data-i18n="dlg_fine">Sizes, pack sizes and compatibility are confirmed when ordering.</p>
+    <div class="dlg__buy">
+      <div class="qty" aria-label="Quantity"><button id="dMinus" aria-label="-">−</button><output id="dQty">1</output><button id="dPlus" aria-label="+">+</button></div>
+      <button class="btn" id="dAdd" data-i18n="add_list">Add to my list</button>
+    </div>
+    <a class="tlink" id="dVideo" target="_blank" rel="noopener" hidden><span data-i18n="util_watch">Watch the demonstration</span> <i>→</i></a>
+  </div>
+</dialog>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

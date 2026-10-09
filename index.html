@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Panda Supply Montréal | Garage and tire shop supplies</title>
+<meta name="description" content="Panda Supply Montréal: supplies for garages and tire shops. Exclusive Canadian distributor of Utilnova, Spain.">
+<meta name="theme-color" content="#0E0E0F">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:title" content="Panda Supply Montréal | Garage and tire shop supplies">
+<meta property="og:description" content="Panda Supply Montréal: supplies for garages and tire shops. Exclusive Canadian distributor of Utilnova, Spain.">
+<meta property="og:image" content="logo/panda-supply-logo-on-ink.png">
+<link rel="preload" href="fonts/libre-franklin-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/libre-franklin-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<div class="bar"><span data-i18n="ribbon">Exclusive Canadian distributor of Utilnova, Spain</span></div>
+
+<header class="head" id="top">
+  <button class="menubtn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+  <nav class="head__nav" aria-label="Main">
+    <a href="catalogue.html" data-i18n="nav_catalogue">Catalogue</a>
+    <a href="utilnova.html">Utilnova</a>
+    <a href="adhesive.html" data-i18n="nav_adhesive">Adhesive weights</a>
+    <a href="quote.html" data-i18n="nav_order">Order</a>
+  </nav>
+  <a class="head__logo" href="index.html" aria-label="Panda Supply Montréal"><img src="logo/panda-supply-logo-ink.svg" alt="Panda Supply Montréal" height="34"></a>
+  <div class="head__actions">
+    <div class="lang" id="lang">
+      <button class="lang__btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false" aria-label="Language / Langue"><span id="langCur">EN</span><svg width="9" height="9" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="m1 3 4 4 4-4"/></svg></button>
+      <ul class="lang__menu" id="langMenu" role="listbox" hidden>
+        <li role="option" data-lang="en" tabindex="0"><b>EN</b><span>English</span><small>Canada</small></li>
+        <li role="option" data-lang="fr" tabindex="0"><b>FR</b><span>Français</span><small>Québec</small></li>
+      </ul>
+    </div>
+    <a class="listbtn" href="quote.html" id="listBtn"><span data-i18n="my_list">My list</span><b id="listCount">0</b></a>
+  </div>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Mobile">
+    <a href="catalogue.html" data-i18n="nav_catalogue">Catalogue</a>
+    <a href="utilnova.html">Utilnova</a>
+    <a href="adhesive.html" data-i18n="nav_adhesive">Adhesive weights</a>
+    <a href="quote.html" data-i18n="nav_order">Order</a>
+    <a href="quote.html" data-i18n="cta_quote">Request a quote</a>
+  </nav>
+  <div class="menu__foot">
+    <a href="tel:+14389271805">438 927-1805</a>
+    <a href="mailto:sales.pandasupplyinc@gmail.com">sales.pandasupplyinc@gmail.com</a>
+  </div>
+</div>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__copy" data-plx="0.06">
+      <p class="eyebrow" data-i18n="hero_kicker">Montréal · Tire and wheel service supply</p>
+      <h1 data-i18n-html="hero_h1">Your workshop.<br><em>Our expertise.</em></h1>
+      <p class="lead" data-i18n="hero_sub">The essentials for tire and wheel service, together at Panda Supply.</p>
+      <div class="hero__cta">
+        <a class="btn" href="catalogue.html" data-i18n="cta_browse">Explore products</a>
+        <a class="tlink" href="quote.html"><span data-i18n="cta_quote">Request a quote</span> <i>→</i></a>
+      </div>
+    </div>
+    <div class="hero__stage" id="stage" data-plx="-0.05">
+      <figure class="slide on" data-p="adhesive"><img src="img/hero-adhesive.webp" alt="" fetchpriority="high"><figcaption><span class="n">01</span><b class="nm"></b><em class="sb" data-i18n="slide1">Guaranteed to −30°C</em></figcaption></figure>
+      <figure class="slide" data-p="speedplates"><img src="img/hero-speedplates.webp" alt=""><figcaption><span class="n">02</span><b class="nm"></b><em class="sb" data-i18n="slide2">New from Utilnova, Spain</em></figcaption></figure>
+      <figure class="slide" data-p="u1"><img src="img/hero-u1.webp" alt=""><figcaption><span class="n">03</span><b class="nm"></b><em class="sb" data-i18n="slide3">Universal dual-band TPMS</em></figcaption></figure>
+      <div class="dots" id="dots" role="tablist"><button class="on" aria-label="1"></button><button aria-label="2"></button><button aria-label="3"></button></div>
+    </div>
+  </section>
+
+  <dl class="facts">
+    <div><dt data-count="30" data-pre="−" data-suf="°C">−30°C</dt><dd data-i18n="stat1">Adhesive weights, guaranteed</dd></div>
+    <div><dt id="statCount" data-count="49">49</dt><dd data-i18n="stat2">products in the catalogue</dd></div>
+    <div><dt>Utilnova</dt><dd data-i18n="stat3">Exclusive distributor in Canada</dd></div>
+  </dl>
+
+  <!-- INDEX -->
+  <section class="idx idx--home" id="jobs">
+    <div class="sec-head">
+      <p class="eyebrow" data-i18n="idx_eyebrow">01 / Shop by the job</p>
+      <h2 data-i18n="jobs_title">What are you working on today?</h2>
+    </div>
+    <ul class="idx__list" id="jobsGrid"></ul>
+    <div class="peek" id="peek" aria-hidden="true"><img alt=""></div>
+  </section>
+
+  <section class="teaser sec">
+    <div class="teaser__img"><img data-plx="0.07" src="img/hero-speedplates.webp" alt="Utilnova Speedplates wheel centering system" loading="lazy"></div>
+    <div class="teaser__copy">
+      <p class="eyebrow"><span class="tag-new" data-i18n="new">New</span> Utilnova / <span data-i18n="spain">Spain</span></p>
+      <h2 data-i18n-html="util_h2">Speedplates.<br>Wheel centering,<br><em>reimagined.</em></h2>
+      <p class="lead" data-i18n="util_p">A wheel centering system for balancers. See it in action.</p>
+      <div class="hero__cta"><a class="btn" href="utilnova.html" data-i18n="explore_util">Explore Utilnova</a></div>
+    </div>
+  </section>
+<section class="marquee" aria-hidden="true"><div class="marquee__track" id="marq"><span>Exclusive Canadian distributor of Utilnova</span><span class="o">Distributeur canadien exclusif d’Utilnova</span><span>Exclusive Canadian distributor of Utilnova</span><span class="o">Distributeur canadien exclusif d’Utilnova</span></div></section>
+  <section class="teaser teaser--flip sec">
+    <div class="teaser__img"><img data-plx="0.07" src="img/hero-adhesive.webp" alt="Panda Supply adhesive wheel weights" loading="lazy"></div>
+    <div class="teaser__copy">
+      <p class="eyebrow" data-i18n="home_adh_eyebrow">Panda Supply / Adhesive weights</p>
+      <h2 data-i18n-html="cold_h2">A hold you can<br><em>count on.</em></h2>
+      <p class="lead" data-i18n="cold_p">Low temperature adhesive. Guaranteed performance down to −30°C.</p>
+      <div class="hero__cta"><a class="btn" href="adhesive.html" data-i18n="explore_adh">See the cold test</a></div>
+    </div>
+  </section>
+  <section class="band"><div class="band__inner"><h2 data-i18n="band_h">Ready when you are.</h2><div class="hero__cta"><a class="btn" href="quote.html" data-i18n="band_cta">Request a quote</a><a class="tlink" href="catalogue.html"><span data-i18n="explore_cat">Browse the catalogue</span> <i>→</i></a></div></div></section>
+</main>
+
+<footer class="foot">
+  <div class="foot__top">
+    <img src="logo/panda-supply-stacked-bone.svg" alt="Panda Supply Montréal" width="220">
+    <div class="foot__cols">
+      <div><h4 data-i18n="foot_contact">Contact</h4><a href="tel:+14389271805">438 927-1805</a><a href="mailto:sales.pandasupplyinc@gmail.com">sales.pandasupplyinc@gmail.com</a></div>
+      <div><h4 data-i18n="foot_explore">Explore</h4><a href="catalogue.html" data-i18n="nav_catalogue">Catalogue</a><a href="utilnova.html">Utilnova</a><a href="adhesive.html" data-i18n="nav_adhesive">Adhesive weights</a><a href="quote.html" data-i18n="nav_order">Order</a><a href="catalogue.pdf" target="_blank" rel="noopener" data-i18n="foot_dl">Download catalogue</a></div>
+    </div>
+  </div>
+  <div class="foot__bot"><span data-i18n="foot_dist">Exclusive Canadian distributor of Utilnova · Spain</span><span>© Panda Supply Inc.</span></div>
+</footer>
+
+<a class="fab" id="fab" href="quote.html" hidden><span><b id="fabCount">0</b> <span data-i18n="fab_items">in your list</span></span><strong data-i18n="fab_cta">Request a quote</strong></a>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
