@@ -290,9 +290,9 @@
           '<button class="card__img-open" data-open="' + p.id + '" aria-label="' + t('details') + ': ' + esc(pname(p)) + '" style="position:absolute;inset:0;background:none;border:0;padding:0;z-index:1"></button>' +
           '<img src="img/' + p.img + '.webp" alt="" loading="lazy" width="360" height="360" style="pointer-events:none">' +
           '<span class="tag">' + brandName(p) + '</span>' + (p.isNew ? '<span class="new">' + t('new') + '</span>' : '') +
-          '<button class="card__add" data-add="' + p.id + '" style="z-index:2">' + (qty ? t('in_list') + ' · ' + qty + '  +' : '+ ' + t('add')) + '</button>' +
         '</div>' +
-        '<div class="card__body"><div><h3 data-open="' + p.id + '">' + esc(pname(p)) + '</h3><p>' + CATS[p.cat][lang] + '</p></div></div>';
+        '<div class="card__body"><div><h3 data-open="' + p.id + '">' + esc(pname(p)) + '</h3><p>' + CATS[p.cat][lang] + '</p></div></div>' +
+        '<button class="card__add" data-add="' + p.id + '">' + (qty ? t('in_list') + ' · ' + qty + ' +' : '+ ' + t('add')) + '</button>';
       grid.appendChild(el);
     });
     $('#count').textContent = fmt(items.length === 1 ? t('n_product') : t('n_products'), { n: items.length });
